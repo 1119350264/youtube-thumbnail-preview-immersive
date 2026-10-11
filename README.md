@@ -22,13 +22,20 @@ Add your own screenshots to `docs/screenshots/` and replace these placeholders w
 
 - Adds convenient preview and comment controls to supported YouTube thumbnails.
 - Opens a cleaner immersive popup player and attempts to prewarm the actual video silently while a thumbnail is hovered; the warmed iframe is reused when playback is opened.
+- **Max quality shortcut:** the `Max` button in the popup player's upper-left controls automatically selects the highest quality currently available for the video.
+- **Long-press speed control:** holding an arrow key activates 3× playback speed, rather than repeatedly seeking in 5-second increments. This is a script-specific behavior, not an official YouTube feature.
+- **Exit the popup:** press `Esc`, or click the blank area between the video surface and the browser edge.
 - Retains useful player interactions such as fullscreen, quality controls, and keyboard shortcuts.
 - Provides comment browsing, filtering, paging, and optional translation. Comments require a user-supplied YouTube Data API v3 key.
 - Uses SponsorBlock segment data where supported by the script.
 
 ### UI refinement in this derivative
 
-In the immersive popup, **the four UI buttons originally positioned on the right side of the player have been moved to the upper-left corner**. Their styling is intentionally subtle and translucent where possible, helping them blend into the video background and reducing distraction from the content.
+In the immersive popup, **the four UI buttons originally positioned on the right side of the player have been moved to the upper-left corner**. Their styling is intentionally subtle and translucent where possible, helping them blend into the video background and reducing distraction from the content. The `Max` button automatically chooses the highest quality currently available for the video.
+
+### Known issue: homepage thumbnail preview can restart
+
+When the mouse remains over a recommended video thumbnail on the YouTube homepage, YouTube's own preview may restart from the beginning within roughly two seconds. The homepage preview and this script's hidden-player preloading can conflict. **The current build prioritizes preloading the actual player for faster popup playback**, so the brief/restarting native thumbnail preview is a known trade-off, not a claim that both behaviors work perfectly together. This behavior may vary with YouTube's page implementation.
 
 ## Installation
 
@@ -80,13 +87,20 @@ Open source means making provenance and changes visible. Please preserve attribu
 
 - 在 YouTube 视频缩略图上添加预览和评论入口。
 - 打开更干净的沉浸式悬浮播放器；鼠标悬停缩略图时尝试静音预热实际视频，并在打开播放器时复用该 iframe，以减少等待。
+- **Max 最高画质按钮**：点击悬浮播放器左上角的 `Max`，自动选择当前视频可用的最高画质。
+- **长按方向键倍速**：按住方向键可启动 3 倍速播放，而不是反复按官方常见的 5 秒步进进行快进/快退。这是脚本提供的行为，并非 YouTube 官方功能。
+- **退出悬浮播放器**：按 `Esc`，或点击视频画面与浏览器边框之间的留白区域。
 - 保留全屏、画质控制及部分键盘快捷操作。
 - 支持评论浏览、筛选、分页和可选翻译。评论功能需要用户自行提供 YouTube Data API v3 密钥。
 - 在脚本支持的场景下使用 SponsorBlock 片段数据。
 
 ### 我们做的界面调整
 
-在沉浸式悬浮播放器中，**原本位于播放器右侧的 4 个 UI 按钮被移动到了左上角**。按钮样式尽量克制、半透明，让它们尽可能融入视频背景，减少对画面内容的遮挡和干扰。
+在沉浸式悬浮播放器中，**原本位于播放器右侧的 4 个 UI 按钮被移动到了左上角**。按钮样式尽量克制、半透明，让它们尽可能融入视频背景，减少对画面内容的遮挡和干扰。左上角的 `Max` 按钮可以自动选择当前视频可用的最高画质。
+
+### 已知问题：首页缩略图预览可能从头重播
+
+鼠标悬停在 YouTube 首页推荐视频封面上时，YouTube 自带的预览视频可能在约 2 秒内从头重播。首页原生预览与脚本的隐藏播放器预加载存在冲突。**当前版本优先保证实际播放页的预加载与悬浮播放器快速起播**，因此暂时接受首页原生预览可能很短或重新开始这一取舍；这不是两个功能都已完美兼容的承诺。具体表现可能随 YouTube 页面实现变化。
 
 ### 安装方法
 
