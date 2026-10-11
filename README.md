@@ -8,14 +8,16 @@ A community-maintained derivative of [YouTube Thumbnail Preview — Clean Popup 
 
 These screenshots show the thumbnail controls, immersive popup player, upper-left player controls, and comments/translation UI. Images are displayed at a consistent width for easier comparison.
 
-<p align="center">
-  <img src="docs/screenshots/thumbnail-buttons.png" alt="Thumbnail controls" width="49%" />
-  <img src="docs/screenshots/immersive-player.png" alt="Immersive player" width="49%" />
-</p>
-<p align="center">
-  <img src="docs/screenshots/player-controls.png" alt="Player controls" width="49%" />
-  <img src="docs/screenshots/comments-translation.png" alt="Comments and translation" width="49%" />
-</p>
+<table>
+  <tr>
+    <td width="50%" align="center"><img src="docs/screenshots/thumbnail-buttons.png" alt="Thumbnail controls" width="100%" height="240" /></td>
+    <td width="50%" align="center"><img src="docs/screenshots/immersive-player.png" alt="Immersive player" width="100%" height="240" /></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center"><img src="docs/screenshots/player-controls.png" alt="Player controls" width="100%" height="240" /></td>
+    <td width="50%" align="center"><img src="docs/screenshots/comments-translation.png" alt="Comments and translation" width="100%" height="240" /></td>
+  </tr>
+</table>
 
 ## Features
 
@@ -39,9 +41,12 @@ When the mouse remains over a recommended video thumbnail on the YouTube homepag
 ## Installation
 
 1. Install a compatible userscript manager, such as [Tampermonkey](https://www.tampermonkey.net/) or [Violentmonkey](https://violentmonkey.github.io/).
-2. Open the userscript file in this repository.
-3. Follow the manager's installation flow. Review the source and requested permissions before installing.
-4. Visit YouTube and hover over a supported thumbnail to find the added controls.
+2. Open the [full userscript source](https://github.com/1119350264/youtube-thumbnail-preview-immersive/blob/main/youtube-thumbnail-preview-immersive.user.js), then click **Raw** near the top-right of the file view. You can also [open the raw source directly](https://raw.githubusercontent.com/1119350264/youtube-thumbnail-preview-immersive/main/youtube-thumbnail-preview-immersive.user.js).
+3. On the Raw page, select all the code (`Ctrl+A` on Windows/Linux or `⌘A` on macOS), then copy it (`Ctrl+C` or `⌘C`).
+4. Open your userscript manager's dashboard, click **Add new script** (often shown as a `+` button), select the starter code in the editor, and replace it by pasting the full source you copied. Save the script.
+5. Review the source and requested permissions before enabling it. Then visit YouTube and hover over a supported thumbnail to find the added controls.
+
+**Why copy from Raw?** The regular GitHub file page is a code-view page, not the script editor. Copying the complete source from Raw and pasting it into a new userscript avoids accidentally saving only part of the code.
 
 ## YouTube Data API key (comments)
 
@@ -104,9 +109,12 @@ Open source means making provenance and changes visible. Please preserve attribu
 ### 安装方法
 
 1. 安装兼容的用户脚本管理器，例如 [Tampermonkey](https://www.tampermonkey.net/) 或 [Violentmonkey](https://violentmonkey.github.io/)。
-2. 打开仓库中的用户脚本文件。
-3. 按脚本管理器提示安装。安装前建议查看源码和权限。
-4. 打开 YouTube，将鼠标悬停在支持的缩略图上，查看新增控件。
+2. 打开[用户脚本文件页面](https://github.com/1119350264/youtube-thumbnail-preview-immersive/blob/main/youtube-thumbnail-preview-immersive.user.js)，点击右上方的 **Raw**。也可以[直接打开 Raw 源码页](https://raw.githubusercontent.com/1119350264/youtube-thumbnail-preview-immersive/main/youtube-thumbnail-preview-immersive.user.js)。
+3. 在 Raw 页面全选代码：Mac 按 `⌘A`，Windows/Linux 按 `Ctrl+A`；然后复制：Mac 按 `⌘C`，Windows/Linux 按 `Ctrl+C`。
+4. 打开 Tampermonkey / Violentmonkey 的管理面板，点击 **添加新脚本**（通常是 `+` 按钮），在编辑器中全选默认内容，再粘贴刚才复制的完整代码。
+5. 保存脚本。启用前请检查源码和所请求的权限，然后打开 YouTube，将鼠标悬停在支持的缩略图上即可查看新增控件。
+
+**为什么要点 Raw？** 普通 GitHub 文件页只是代码展示页面，并不是油猴脚本编辑器。先从 Raw 页面复制完整源码，再粘贴到新建脚本中，可以避免只复制到部分代码。
 
 ### API 密钥、隐私与安全
 
