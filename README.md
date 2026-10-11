@@ -6,17 +6,15 @@ A community-maintained derivative of [YouTube Thumbnail Preview — Clean Popup 
 
 ## Preview screenshots
 
-Add your own screenshots to `docs/screenshots/` and replace these placeholders with Markdown image links.
-
-<!-- SCREENSHOTS: replace the placeholders below when screenshots are ready -->
+These screenshots show the thumbnail controls, immersive popup player, upper-left player controls, and comments/translation UI.
 
 | Thumbnail controls | Immersive player |
 |---|---|
-| _Screenshot placeholder: `docs/screenshots/thumbnail-buttons.png`_ | _Screenshot placeholder: `docs/screenshots/immersive-player.png`_ |
+| ![Thumbnail controls](docs/screenshots/thumbnail-buttons.png) | ![Immersive player](docs/screenshots/immersive-player.png) |
 
 | Player controls close-up | Comments and translation |
 |---|---|
-| _Screenshot placeholder: `docs/screenshots/player-controls.png`_ | _Screenshot placeholder: `docs/screenshots/comments-translation.png`_ |
+| ![Player controls](docs/screenshots/player-controls.png) | ![Comments and translation](docs/screenshots/comments-translation.png) |
 
 ## Features
 
