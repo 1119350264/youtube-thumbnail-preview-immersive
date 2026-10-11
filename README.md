@@ -6,15 +6,16 @@ A community-maintained derivative of [YouTube Thumbnail Preview — Clean Popup 
 
 ## Preview screenshots
 
-These screenshots show the thumbnail controls, immersive popup player, upper-left player controls, and comments/translation UI.
+These screenshots show the thumbnail controls, immersive popup player, upper-left player controls, and comments/translation UI. Images are displayed at a consistent width for easier comparison.
 
-| Thumbnail controls | Immersive player |
-|---|---|
-| ![Thumbnail controls](docs/screenshots/thumbnail-buttons.png) | ![Immersive player](docs/screenshots/immersive-player.png) |
-
-| Player controls close-up | Comments and translation |
-|---|---|
-| ![Player controls](docs/screenshots/player-controls.png) | ![Comments and translation](docs/screenshots/comments-translation.png) |
+<p align="center">
+  <img src="docs/screenshots/thumbnail-buttons.png" alt="Thumbnail controls" width="49%" />
+  <img src="docs/screenshots/immersive-player.png" alt="Immersive player" width="49%" />
+</p>
+<p align="center">
+  <img src="docs/screenshots/player-controls.png" alt="Player controls" width="49%" />
+  <img src="docs/screenshots/comments-translation.png" alt="Comments and translation" width="49%" />
+</p>
 
 ## Features
 
@@ -29,7 +30,7 @@ These screenshots show the thumbnail controls, immersive popup player, upper-lef
 
 ### UI refinement in this derivative
 
-In the immersive popup, **the four UI buttons originally positioned on the right side of the player have been moved to the upper-left corner**. Their styling is intentionally subtle and translucent where possible, helping them blend into the video background and reducing distraction from the content. The `Max` button automatically chooses the highest quality currently available for the video.
+In the immersive popup, **the three UI buttons originally positioned on the right side of the player have been moved to the upper-left corner**. Their styling is intentionally subtle and translucent where possible, helping them blend into the video background and reducing distraction from the content. The `Max` button automatically chooses the highest quality currently available for the video.
 
 ### Known issue: homepage thumbnail preview can restart
 
@@ -94,7 +95,7 @@ Open source means making provenance and changes visible. Please preserve attribu
 
 ### 我们做的界面调整
 
-在沉浸式悬浮播放器中，**原本位于播放器右侧的 4 个 UI 按钮被移动到了左上角**。按钮样式尽量克制、半透明，让它们尽可能融入视频背景，减少对画面内容的遮挡和干扰。左上角的 `Max` 按钮可以自动选择当前视频可用的最高画质。
+在沉浸式悬浮播放器中，**原本位于播放器右侧的 3 个 UI 按钮被移动到了左上角**。按钮样式尽量克制、半透明，让它们尽可能融入视频背景，减少对画面内容的遮挡和干扰。左上角的 `Max` 按钮可以自动选择当前视频可用的最高画质。
 
 ### 已知问题：首页缩略图预览可能从头重播
 
